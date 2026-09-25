@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Közde Pide | Authentic Anatolian Wood-Fired Flatbread</title>
+    <meta name="description" content="Experience the authentic taste of Anatolia. Handcrafted dough, wood-fired oven, and traditional recipes since 1978. Best Turkish Pide in town.">
+    <meta name="keywords" content="turkish pide, flatbread, wood-fired pizza, anatolian cuisine, restaurant, istanbul food">
+    <meta name="author" content="Közde Pide">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Közde Pide | Authentic Anatolian Flavors">
+    <meta property="og:description" content="Handcrafted dough baked in a wood-fired oven. Taste the tradition.">
+    <meta property="og:image" content="https://www.kozdepide.com/assets/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="pide.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-logo">Közde Pide</div>
+            <div class="loader-sub">Firing up the oven...</div>
+            <div class="loader-bar">
+                <span class="loader-bar-fill"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKGROUNDS -->
+    <div class="bg-fire" aria-hidden="true"></div>
+    <div class="bg-grain" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Közde Pide Home">
+                <div class="logo-mark" aria-hidden="true"></div>
+                <div class="logo-text">
+                    <span class="logo-title">Közde Pide</span>
+                    <span class="logo-subtitle">— Est. 1978 —</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#chefs" class="nav-link">Chefs</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">Book a Table</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="hamburger-icon" aria-hidden="true">☰</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Menu">
+        <button class="mobile-close" id="mobileClose" aria-label="Close Menu">✕</button>
+        <nav>
+            <ul>
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">Our Story</a></li>
+                <li><a href="#menu" class="mobile-link">Menu</a></li>
+                <li><a href="#chefs" class="mobile-link">Our Chefs</a></li>
+                <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+                <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+                <li><a href="#contact" class="mobile-link">Reservation</a></li>
+            </ul>
+        </nav>
+        <a href="tel:+1234567890" class="mobile-cta">Call Us: +1 234 567 890</a>
+    </aside>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home" aria-label="Introduction">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    <span class="badge-text">Wood-Fired • Stone Oven</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    The Authentic <br>
+                    <span class="accent">Taste of Anatolia</span> <br>
+                    On Your Plate.
+                </h1>
+                
+                <p class="hero-lead">
+                    Since 1978, we bring the bounty of Anatolian lands to your table. 
+                    Our dough is kneaded at dawn, baked patiently over oak wood fire by master hands.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">
+                        <span>Explore Menu</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#about" class="btn btn-ghost">
+                        <span>Our Story</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="47">0</span>
+                        <span class="stat-label">Years of Legacy</span>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="24">0</span>
+                        <span class="stat-label">Unique Flavors</span>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-target="1" data-suffix="M+">0</span>
+                        <span class="stat-label">Happy Guests</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1614768151720-803ab6ac0266?w=800&q=80" alt="Freshly baked cheesy pide in stone oven" loading="eager">
+                </div>
+                <div class="float-tag t1">
+                    <span class="emoji" aria-hidden="true">🔥</span> 
+                    <span>100% Oak Wood Fire</span>
+                </div>
+                <div class="float-tag t2">
+                    <span class="emoji" aria-hidden="true">🌾</span> 
+                    <span>Natural Sourdough</span>
+                </div>
+                <div class="float-tag t3">
+                    <span class="emoji" aria-hidden="true">⭐</span> 
+                    <span>4.9/5 Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual reveal">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Traditional stone oven and fire" loading="lazy">
+                        <div class="year-stamp" aria-hidden="true">1978</div>
+                        <div class="master-stamp">
+                            <span>Master</span>
+                            <span>Baker</span>
+                            <span>• • •</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text reveal">
+                        <span class="section-tag">Our Story</span>
+                        <h2 id="about-title" class="section-title">
+                            The heat of the <em>oven</em>, <br>
+                            the touch of a <em>master</em>, <br>
+                            a family <em>legacy</em>.
+                        </h2>
+                        <p>
+                            It all started with our grandfather, Master Mehmet, kneading dough by the stone oven in a small town in the Black Sea region. Today, as the third generation, we serve the same passion, the same family recipes, and the unique aroma of wood fire.
+                        </p>
+                        <p>
+                            The secret of our Pide is simple: <strong>Premium wheat, pure water, long fermentation</strong> 
+                            and the unique flavor that comes from patient baking. The rest is the generosity of Anatolia.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature-card">
+                                <div class="feature-icon" aria-hidden="true">🌾</div>
+                                <div class="feature-content">
+                                    <h4>Organic Wheat</h4>
+                                    <p>High-quality flour sourced from organic fields in Central Anatolia.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon" aria-hidden="true">🔥</div>
+                                <div class="feature-content">
+                                    <h4>Wood-Fired</h4>
+                                    <p>Baked at 400°C with oak and beech wood for authentic smoky flavor.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon" aria-hidden="true">🧑‍🍳</div>
+                                <div class="feature-content">
+                                    <h4>Master's Touch</h4>
+                                    <p>Hand-kneaded dough using 3rd generation family traditions.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon" aria-hidden="true">⏳</div>
+                                <div class="feature-content">
+                                    <h4>24h Fermentation</h4>
+                                    <p>Slow fermentation for a light, digestible, and flavorful crust.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="section menu" id="menu" aria-labelledby="menu-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Our Menu</span>
+                    <h2 id="menu-title" class="section-title">Fresh from the <em>Oven</em></h2>
+                    <p class="section-sub">Each one carefully prepared, baked in a stone oven over wood fire, using traditional recipes.</p>
+                </div>
+
+                <div class="menu-tabs reveal" role="tablist" aria-label="Menu Categories">
+                    <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-filter="classic">Classics</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-filter="cheese">Cheesy & Veggie</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-filter="special">Specials</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-filter="sweet">Desserts</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <!-- 1. Kıymalı Pide (Minced Meat) -->
+                    <article class="menu-card reveal" data-category="classic">
+                        <div class="menu-img">
+                            <img src="https://static.wixstatic.com/media/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg/v1/fill/w_752,h_422,al_c,lg_1,q_80,enc_avif,quality_auto/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg" alt="Seasoned Minced Beef Pide" loading="lazy">
+                            <span class="menu-badge">Classic</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Minced Meat Pide</h3>
+                            <p class="menu-desc">Premium seasoned minced beef, onions, and parsley baked to perfection.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$12 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Minced Meat Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Kuşbaşılı Pide (Cubed Meat) -->
+                    <article class="menu-card reveal" data-category="classic">
+                        <div class="menu-img">
+                            <img src="https://static.wixstatic.com/media/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg/v1/fill/w_752,h_422,al_c,lg_1,q_80,enc_avif,quality_auto/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg" alt="Tender Cubed Beef Pide" loading="lazy">
+                            <span class="menu-badge">Best Seller</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Cubed Meat Pide</h3>
+                            <p class="menu-desc">Juicy cubed beef tenderloin with peppers and tomatoes. A Black Sea favorite.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$14 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Cubed Meat Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Kaşarlı Pide (Cheese) -->
+                    <article class="menu-card reveal" data-category="cheese">
+                        <div class="menu-img">
+                            <img src="https://static.wixstatic.com/media/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg/v1/fill/w_752,h_422,al_c,lg_1,q_80,enc_avif,quality_auto/881847_46dc5a50924f410996cad538cc019d66~mv2.jpg" alt="Mixed Cheese Pide" loading="lazy">
+                            <span class="menu-badge">Vegetarian</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Mixed Cheese Pide</h3>
+                            <p class="menu-desc">A delicious blend of aged cheddar, mozzarella, and Turkish white cheese.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$11 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Cheese Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Karışık Pide (Mixed) -->
+                    <article class="menu-card reveal" data-category="special">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFF1EuIPM0dlfb2x2gBvKOOaOSgUZ-wu0pzyjrNmJBCLHELCXmUaKdqg&s=10" alt="Mixed Special Pide" loading="lazy">
+                            <span class="menu-badge">Chef's Choice</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">The Grand Mix</h3>
+                            <p class="menu-desc">Can't decide? Get everything: Meat, cheese, sausage, and veggies in one.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$16 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Mixed Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Sucuklu Yumurtalı (Sausage & Egg) -->
+                    <article class="menu-card reveal" data-category="special">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyajM9Ye_2zEscr0vjAEDr-8w-NeCcd3s-RMKJcJ9el6AFe1eing-H9l4&s=10" alt="Sucuk and Egg Pide" loading="lazy">
+                            <span class="menu-badge">Popular</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Sucuk & Egg</h3>
+                            <p class="menu-desc">Spicy Turkish sausage baked with fresh farm eggs. The ultimate breakfast.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$13 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Sucuk Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. Peynirli Pide (White Cheese) -->
+                    <article class="menu-card reveal" data-category="cheese">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR82OhxWs3jHCsgcl8LGyQ6ibs5eD_y6zURwOGZhq5fXWz0z_Cxg2RTVs&s=10" alt="White Cheese Pide" loading="lazy">
+                            <span class="menu-badge">Vegetarian</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">White Cheese Pide</h3>
+                            <p class="menu-desc">Traditional Turkish white cheese with fresh parsley. Simple and tasty.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$10 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add White Cheese Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 7. Pastırmalı Pide (Pastrami) -->
+                    <article class="menu-card reveal" data-category="special">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2sINPAgct160i_zmRCHEBr1JGtyMlCZuRQ4JUr-xVmA&s=10" alt="Pastrami Pide" loading="lazy">
+                            <span class="menu-badge">Premium</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Pastrami Pide</h3>
+                            <p class="menu-desc">High-quality cured beef pastrami with melted cheese. A luxury treat.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$15 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Pastrami Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 8. Ispanaklı Pide (Spinach) -->
+                    <article class="menu-card reveal" data-category="cheese">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2zMYG_j871epBvmGTCsZDy6TS9_ld_7D98qZ6F-7Ltb8hKESyPYV9phc&s=10" alt="Spinach and Cheese Pide" loading="lazy">
+                            <span class="menu-badge">Healthy</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Spinach & Feta</h3>
+                            <p class="menu-desc">Fresh spinach mixed with feta cheese and pine nuts. Light and nutritious.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$10 <small>/ slice</small></span>
+                                <button class="add-btn" aria-label="Add Spinach Pide to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 9. Tahinli Çörek (Tahini Roll) -->
+                    <article class="menu-card reveal" data-category="sweet">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjYwOYccgF1DBgd0Gc-JnIWzN5gupcELFdCCPY6a9wovIezPAD7OgZMc&s=10" alt="Tahini Swirl" loading="lazy">
+                            <span class="menu-badge">Sweet</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Tahini Swirl</h3>
+                            <p class="menu-desc">Soft dough swirled with rich tahini and sugar. Perfect with black tea.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$6 <small>/ piece</small></span>
+                                <button class="add-btn" aria-label="Add Tahini Roll to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 10. Künefe (Kunefe) -->
+                    <article class="menu-card reveal" data-category="sweet">
+                        <div class="menu-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0-1qF75rW-9xIfSvi7_r9MIPv6c85BGokiyX3eXYhSQ&s=10" alt="Antep Kunefe" loading="lazy">
+                            <span class="menu-badge">Dessert</span>
+                        </div>
+                        <div class="menu-body">
+                            <h3 class="menu-title">Antep Kunefe</h3>
+                            <p class="menu-desc">Crispy shredded pastry filled with pistachios and sweet syrup. A must-try.</p>
+                            <div class="menu-foot">
+                                <span class="menu-price">$9 <small>/ portion</small></span>
+                                <button class="add-btn" aria-label="Add Kunefe to cart">+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMO BANNER -->
+        <section class="banner reveal" aria-label="Promotion">
+            <div class="banner-content">
+                <h3>Make Tonight a <br>Feast to Remember.</h3>
+                <p>Try our special "Family Feast Platter" for 4 people. Includes 4 different Pides, salads, and drinks. Only $45.</p>
+                <a href="#contact" class="btn btn-primary">Reserve Your Table</a>
+            </div>
+            <div class="banner-visual">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Family feast platter" loading="lazy">
+            </div>
+        </section>
+
+        <!-- CHEFS SECTION -->
+        <section class="section chefs" id="chefs" aria-labelledby="chefs-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Our Masters</span>
+                    <h2 id="chefs-title" class="section-title">The Hands Behind <em>The Flavor</em></h2>
+                    <p class="section-sub">Years of experience, craftsmanship passed down through generations.</p>
+                </div>
+                
+                <div class="chefs-grid">
+                    <article class="chef-card reveal">
+                        <div class="chef-avatar">
+                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="Mehmet Karadeniz" loading="lazy">
+                        </div>
+                        <h4 class="chef-name">Mehmet Karadeniz</h4>
+                        <span class="chef-role">Head Chef • Founder</span>
+                        <p class="chef-desc">The legendary master who has been speaking the language of dough since 1978.</p>
+                    </article>
+
+                    <article class="chef-card reveal">
+                        <div class="chef-avatar">
+                            <img src="https://images.unsplash.com/photo-1595257841889-eca2678571e7?w=400&q=80" alt="Ayse Karadeniz" loading="lazy">
+                        </div>
+                        <h4 class="chef-name">Ayse Karadeniz</h4>
+                        <span class="chef-role">Pastry Chef</span>
+                        <p class="chef-desc">The hidden hand behind our desserts. Guardian of traditional sweet recipes.</p>
+                    </article>
+
+                    <article class="chef-card reveal">
+                        <div class="chef-avatar">
+                            <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=400&q=80" alt="Hasan Yilmaz" loading="lazy">
+                        </div>
+                        <h4 class="chef-name">Hasan Yilmaz</h4>
+                        <span class="chef-role">Pide Master</span>
+                        <p class="chef-desc">Second-generation master turning every Pide into a work of art with 25 years of experience.</p>
+                    </article>
+
+                    <article class="chef-card reveal">
+                        <div class="chef-avatar">
+                            <img src="https://images.unsplash.com/photo-1581299894007-aaa574a0d1df?w=400&q=80" alt="Emre Karadeniz" loading="lazy">
+                        </div>
+                        <h4 class="chef-name">Emre Karadeniz</h4>
+                        <span class="chef-role">3rd Gen • Modern Chef</span>
+                        <p class="chef-desc">Blending his grandfather's legacy with modern touches. The architect of future flavors.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS SECTION -->
+        <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 id="reviews-title" class="section-title">What Our <em>Guests</em> Say</h2>
+                    <p class="section-sub">Just a few words from our thousands of happy customers.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card reveal">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote class="review-text">
+                            "I grew up in Istanbul so I'm very picky about Pide. But this place rivals my grandmother's cooking. Truly authentic, truly delicious."
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" alt="Fatma K." loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Fatma K.</strong>
+                                <span class="reviewer-meta">London • 2 weeks ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card reveal">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote class="review-text">
+                            "The texture of the dough, the stretch of the cheese, the doneness of the meat... Everything is perfect. The staff's attention is the cherry on top."
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" alt="Ahmet Y." loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">John D.</strong>
+                                <span class="reviewer-meta">New York • 1 month ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card reveal">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote class="review-text">
+                            "Don't leave without trying the Cheese Pide. That stretching cheese, that crispy crust... A beauty you won't want to eat before taking a photo."
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" alt="Selin D." loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Sarah M.</strong>
+                                <span class="reviewer-meta">Berlin • 3 days ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card reveal">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote class="review-text">
+                            "We come here every Sunday as a family. Kids love the meat, we love the mix. Best value for money in the city. Thanks Közde Pide!"
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" alt="Murat O." loading="lazy">
+                            </div>
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Michael R.</strong>
+                                <span class="reviewer-meta">Toronto • 5 days ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Gallery</span>
+                    <h2 id="gallery-title" class="section-title">Snapshots from <em>The Oven</em></h2>
+                    <p class="section-sub">Every snapshot tells a flavor story.</p>
+                </div>
+
+                <div class="gallery-grid reveal">
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1625938145749-eaf4a7c407f6?w=800&q=80" alt="Freshly baked pide" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Wood fire" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1608897013036-48fea204b1d8?w=600&q=80" alt="Fresh cheese" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Master chef" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Handmade dough" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" alt="Serving pide" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Oven bread" loading="lazy">
+                    </div>
+                    <div class="g-item" tabindex="0" role="button" aria-label="Enlarge image">
+                        <img src="https://images.unsplash.com/photo-1541795795328-f073b72e1e39?w=600&q=80" alt="Fresh ingredients" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2 id="faq-title" class="section-title">Everything You <em>Wonder</em> About</h2>
+                    <p class="section-sub">Answers to your common questions are here.</p>
+                </div>
+
+                <div class="faq-grid reveal">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            <span>What kind of flour do you use?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-a" hidden>
+                            <p>We use high-protein, premium wheat flour sourced from organic fields in Central Anatolia. Our dough is rested for at least 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            <span>Do you have Gluten-Free options?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-a" hidden>
+                            <p>Yes, we offer gluten-free dough upon special request. To prevent cross-contamination, please specify this when booking or ordering.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            <span>Do you offer delivery service?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-a" hidden>
+                            <p>Yes, we deliver within a 10km radius. You can also order via UberEats, DoorDash, and Deliveroo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            <span>Is reservation required?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-a" hidden>
+                            <p>On weekdays, we usually accept walk-ins. However, for weekends and special occasions, we highly recommend making a reservation to guarantee your spot.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            <span>Are there Vegetarian/Vegan options?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-a" hidden>
+                            <p>Absolutely. We have Spinach, Cheese, Mushroom, and Vegetable Pides. We can also use vegan cheese alternatives upon request.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Contact Us</span>
+                    <h2 id="contact-title" class="section-title">We'd Love to <em>Host</em> You</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3 class="contact-subtitle">Our door is always <em>open</em>, our tea is always <em>fresh</em>.</h3>
+                        <p>Contact us for reservations, private events, catering services, or just to say hello.</p>
+                        
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <div class="info-icon" aria-hidden="true">📍</div>
+                                <div class="info-content">
+                                    <strong>Address</strong>
+                                    <span>123 Flavor Street, Downtown, NY 10001</span>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icon" aria-hidden="true">📞</div>
+                                <div class="info-content">
+                                    <strong>Phone</strong>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <div class="info-icon" aria-hidden="true">✉️</div>
+                                <div class="info-content">
+                                    <strong>Email</strong>
+                                    <a href="mailto:hello@kozdepide.com">hello@kozdepide.com</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h4 class="hours-title">Opening Hours</h4>
+                        <table class="hours-table">
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Thursday</td>
+                                    <td>11:00 AM - 10:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday - Saturday</td>
+                                    <td>11:00 AM - 11:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>12:00 PM - 10:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm" action="#" method="POST" novalidate>
+                        <h3>Make a Reservation</h3>
+                        
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 890" autocomplete="tel">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="field">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="1-2">1-2 People</option>
+                                <option value="3-4">3-4 People</option>
+                                <option value="5-8">5-8 People</option>
+                                <option value="8+">8+ People</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Special Requests (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any allergies or special notes..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Reservation</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section class="map-section reveal" aria-label="Location Map">
+            <div class="container">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-74.01%2C40.74%2C-73.98%2C40.76&layer=mapnik&marker=40.7505%2C-73.9934" 
+                        loading="lazy" 
+                        title="Közde Pide Location Map"
+                        aria-label="Map showing restaurant location in New York">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="foot-grid">
+                <div class="foot-brand">
+                    <a href="#home" class="logo" aria-label="Közde Pide Home">
+                        <div class="logo-mark" aria-hidden="true"></div>
+                        <div class="logo-text">
+                            <span class="logo-title">Közde Pide</span>
+                            <span class="logo-subtitle">— Est. 1978 —</span>
+                        </div>
+                    </a>
+                    <p>Since 1978, bringing the authentic taste of Anatolia, the scent of wood fire, and the master's touch to your tables.</p>
+                    <div class="socials">
+                        <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Our Facebook page">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Our Twitter (X) account">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Our YouTube channel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="foot-col">
+                    <h5>Explore</h5>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#chefs">Our Chefs</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#contact">Reservations</a></li>
+                        <li><a href="#contact">Catering</a></li>
+                        <li><a href="#contact">Private Events</a></li>
+                        <li><a href="#contact">Delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#">123 Flavor St, NY</a></li>
+                        <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                        <li><a href="mailto:hello@kozdepide.com">hello@kozdepide.com</a></li>
+                        <li><a href="#">Daily 11:00 AM – 10:00 PM</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-bottom">
+                <div class="copyright">© 2024 Közde Pide. All rights reserved.</div>
+                <div class="made-with">
+                    Made with <span class="heart" aria-hidden="true">❤️</span> in Istanbul.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <button class="to-top" id="toTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- JS Link -->
+    <script src="pide.js"></script>
+</body>
+</html>
