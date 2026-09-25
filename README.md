@@ -22,7 +22,7 @@ A high-performance, fully responsive restaurant website template built with pure
 
 ## 🚀 Live Demo
 
-Check out the live version here: [Live Demo Link](https://kozdepide.netlify.app) *(Netlify linkini buraya ekle)*
+Check out the live version here: https://premium-restaurant-template.netlify.app
 
 ## 📂 Project Structure
 
